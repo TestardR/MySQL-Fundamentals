@@ -36,7 +36,7 @@ FROM person p;
 SELECT COUNT(DISTINCT p.person_first_name)
 FROM person p;
 
-/* GROUP BY */
+/* GROUP BY : create subset*/
 SELECT COUNT(p.first_name),
     p.first_name
 FROM person p
@@ -47,7 +47,7 @@ SELECT COUNT(p.person_first_name),
 FROM person p
 GROUP BY p.person_first_name;
 
-/* Having */
+/* Having : to restrict GROUP BY*/
 SELECT
     COUNT(DISTINC p
 .first_name),
